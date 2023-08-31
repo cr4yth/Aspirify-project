@@ -65,7 +65,7 @@ export default function Home() {
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
             src="/path.webp"
-            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black 2xl:h-[40vh] xl:h-[34vh]"
+            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black 2xl:h-[45vh] xl:h-[34vh]"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
             Your goals are the destination, our roadmap is the route to get you
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
             src="quiz.webp"
-            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black"
+            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[300px] min-h-[300px] border-[1px] border-solid border-black 2xl:h-[45vh] xl:h-[34vh]"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
             Discover your perfect role, one question at a time.
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
             src="/scope.webp"
-            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black"
+            className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black 2xl:h-[45vh] xl:h-[34vh]"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
             Empowering your journey with all the knowledge you need to turn
