@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="right ">
           <img
-            src="/landing.jpg"
+            src="/landing.webp"
             className="landing-image min-h-[600px] min-w-[550px] w-[60vw] h-[70vh] object-scale-down"
           ></img>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
       <div className="feature flex mt-[3vh] justify-around mb-[4vh] min-w-[960px]">
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
-            src="/path.jpg"
+            src="/path.webp"
             className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black 2xl:h-[40vh] xl:h-[34vh]"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
-            src="quiz.jpg"
+            src="quiz.webp"
             className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
         <div className="feature-1 p-[1rem] flex flex-col items-center w-[30%]">
           <img
-            src="/scope.jpg"
+            src="/scope.webp"
             className="feature-img object-cover w-[25vw] h-[45vh] min-w-[290px] min-h-[300px] border-[1px] border-solid border-black"
           ></img>
           <div className="feature-def text-[1.2rem] text-justify w-[75%] mt-[1.5rem]">
@@ -134,7 +134,7 @@ export default function Home() {
       <div className="contact ml-[5vw] mr-[5vw] flex items-center justify-center mb-[3rem]">
         <div className="con-img">
           <img
-            src="/contactus.jpg"
+            src="/contactus.webp"
             className="sen-img w-[40vw] min-w-[450px] min-h-[300px] "
           ></img>
         </div>
