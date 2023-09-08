@@ -33,17 +33,29 @@ const nav = () => {
           onMouseLeave={notshow}
         >
           <Link
-            href="/services"
+            href="/service"
             className="text-black hover:bg-[#da3a00] hover:text-white p-2"
           >
-            services
+            Services
           </Link>
           <div>
             {showserv && (
-              <div className="service-options absolute mt-4 right-[-0.5rem] top-[1rem] pt-2">
-                <div className="sr-op">Quiz</div>
-                <div className="sr-op">Roadmap</div>
-                <div className="sr-op">Degree</div>
+              <div className="service-options text-[1.2rem] border-black border-[1px] absolute mt-4 right-[-1rem] top-[1rem] p-2 flex flex-col h-[6.5rem] justify-between bg-white rounded-[5px]">
+                <Link href="/quiz">
+                  <div className="sr-op hover:text-[#da3a00] cursor-pointer">
+                    Quiz
+                  </div>
+                </Link>
+                <Link href="/roadmap">
+                  <div className="sr-op hover:text-[#da3a00] cursor-pointer">
+                    Roadmap
+                  </div>
+                </Link>
+                <Link href="/degree">
+                  <div className="sr-op hover:text-[#da3a00] cursor-pointer">
+                    Degree
+                  </div>
+                </Link>
               </div>
             )}
           </div>

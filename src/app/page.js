@@ -48,7 +48,7 @@ export default function Home() {
               Let's embark on this path to success together.
             </div>
             <div className="getstarted mt-[1.2rem]">
-              <button className="startbutton w-[8rem] h-[2.5rem] text-[1.1rem] text-white bg-black border-0  ">
+              <button className="startbutton w-[8rem] h-[2.5rem] text-[1.1rem] text-white bg-black border-0">
                 Get started
               </button>
             </div>
