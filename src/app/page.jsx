@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const route = useRouter();
   const [toggle, settoggle] = useState(null);
   const toggled = (i) => {
     if (toggle === i) {
@@ -48,7 +50,12 @@ export default function Home() {
               Let's embark on this path to success together.
             </div>
             <div className="getstarted mt-[1.2rem]">
-              <button className="startbutton w-[8rem] h-[2.5rem] text-[1.1rem] text-white bg-black border-0">
+              <button
+                className="startbutton w-[8rem] h-[2.5rem] text-[1.1rem] text-white bg-black border-0"
+                onClick={() => {
+                  route.push("/service");
+                }}
+              >
                 Get started
               </button>
             </div>

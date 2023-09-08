@@ -7,9 +7,9 @@ import { useRouter } from "next/navigation";
 const services = () => {
   const route = useRouter();
   return (
-    <div className=" w-[98vw] flex flex-col h-[84vh] items-center mt-[1rem] mr-auto ml-auto mb-[0.5rem] min-w-[1050px] bg-[#1a2e35] rounded-xl gradeint">
-      <div className="flex flex-row  w-[70rem] justify-between mt-[12vh]">
-        <div className="w-[18rem] h-[24rem] bg-white border-[1px]  flex flex-col rounded-xl border-black text-black hover:scale-[1.2] duration-[150] transition-all">
+    <div className=" w-[98vw] flex flex-col h-[84vh] min-h-[530px] items-center mt-[1rem] mr-auto ml-auto mb-[0.5rem] min-w-[1050px] bg-[white] rounded-xl gradeint">
+      <div className="flex flex-row min-w-[1000px] justify-between mt-[12vh] min-h-[500px]">
+        <div className="w-[18rem] h-[24rem] bg-white border-[1px]  flex flex-col rounded-xl border-black text-black hover:scale-[1.1] duration-[150] transition-all">
           <div className="text-[2.2rem] mt-[2rem] flex justify-center font-light ">
             Roadmap
           </div>
@@ -28,7 +28,7 @@ const services = () => {
             Explore Roadmap
           </button>
         </div>
-        <div className="w-[18rem] h-[24rem] bg-white mt-[4.5rem] border-[1px] border-black flex flex-col rounded-xl hover:scale-[1.2] duration-[150] transition-all text-black">
+        <div className="w-[18rem] h-[24rem] bg-white mt-[4.5rem] border-[1px] border-black flex flex-col rounded-xl hover:scale-[1.1] duration-[150] transition-all text-black">
           <div className="text-[2.2rem] mt-[2rem] flex justify-center font-light text-[black]">
             Quiz
           </div>
@@ -46,7 +46,7 @@ const services = () => {
             Take Quiz
           </button>
         </div>
-        <div className="w-[18rem] h-[24rem] bg-white border-[1px] border-black flex flex-col rounded-xl translate-all hover:scale-[1.2] duration-150">
+        <div className="w-[18rem] h-[24rem] bg-white border-[1px] border-black flex flex-col rounded-xl translate-all hover:scale-[1.1] duration-150">
           <div className="text-[2.2rem] mt-[2rem] flex justify-center font-light text-[black]">
             Degree
           </div>

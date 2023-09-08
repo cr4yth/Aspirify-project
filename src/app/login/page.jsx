@@ -9,7 +9,7 @@ const login = () => {
   });
   return (
     <div className="fo justify-center flex w-[100%] mt-[10vh] mb-[2rem] min-w-[1000px] ">
-      <div className="flex shadow-[-5px_5px_rgba(255,116,92,0.4),-10px_10px_rgba(255,116,92,0.3),-15px_15px_rgba(255,116,92,0.2),-20px_20px_rgba(255,116,92,0.1),-25px_25px_rgba(255,116,92,0.05)]">
+      <div className="flex shadow-[5px_5px_rgba(26,46,53,0.5),5px_5px_rgba(26,46,53,0.4),10px_10px_rgba(26,46,53,0.3),15px_15px_rgba(26,46,53,0.2),20px_20px_rgba(26,46,53,0.1),25px_25px_rgba(26,46,53,0.05)]">
         <div className="h-[33.875rem] overflow-hidden">
           <img
             src="/loginimagage.webp"
@@ -36,7 +36,7 @@ const login = () => {
                 setuser({ ...user, email: e.target.value });
               }}
               value={user.email}
-              className="login-inputab outline-none border-t-none border-l-none border-r-none border-b-[1px] border-b-black border-b-solid h-[1.5rem] text-[1.2rem] w-[99%] pl-[0.2rem]"
+              className="login-inputab  outline-none border-t-none border-l-none border-r-none border-b-[1px] border-b-black border-b-solid h-[1.5rem] text-[1.2rem] w-[99%] pl-[0.2rem]"
               type="email"
             ></input>
           </div>
@@ -47,7 +47,7 @@ const login = () => {
                 setuser({ ...user, password: e.target.value });
               }}
               value={user.password}
-              className="login-inputab outline-none border-t-none border-l-none border-r-none border-b-[1px] border-b-black border-b-solid h-[1.5rem] text-[1.2rem] w-[99%] pl-[0.2rem]"
+              className="login-inputab autofill:text-[1.2rem] outline-none border-t-none border-l-none border-r-none border-b-[1px] border-b-black border-b-solid h-[1.5rem] text-[1.2rem] w-[99%] pl-[0.2rem]"
               type="password"
             ></input>
           </div>
