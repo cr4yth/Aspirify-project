@@ -7,8 +7,17 @@ import { useRouter } from "next/navigation";
 const services = () => {
   const route = useRouter();
   return (
-    <div className=" w-[98vw] flex flex-col h-[84vh] min-h-[530px] items-center mt-[1rem] mr-auto ml-auto mb-[0.5rem] min-w-[1050px] bg-[white] rounded-xl gradeint">
-      <div className="flex flex-row min-w-[1000px] justify-between mt-[12vh] min-h-[500px]">
+    <div
+      style={{
+        backgroundImage: `url("/bg.webp")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPositionX: "center",
+        backgroundPositionY: "18%",
+      }}
+      className="w-[98%] flex flex-col h-[86.1vh] min-h-[550px] items-center mt-[1rem] mr-auto ml-auto min-w-[1050px] rounded-xl bg-[white]"
+    >
+      <div className="flex flex-row min-w-[1000px] justify-between mt-[12vh] min-h-[490px]">
         <div className="w-[18rem] h-[24rem] bg-white border-[1px]  flex flex-col rounded-xl border-black text-black hover:scale-[1.1] duration-[150] transition-all">
           <div className="text-[2.2rem] mt-[2rem] flex justify-center font-light ">
             Roadmap
