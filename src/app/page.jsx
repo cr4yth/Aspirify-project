@@ -62,7 +62,7 @@ export default function Home() {
               <button
                 className="startbutton w-[9rem] h-[3rem] text-[1.1rem] text-[#da3a00] bg-white border-[1px] border-[#da3a00] ml-[1rem] transition-all duration-200 hover:scale-[1.1]"
                 onClick={() => {
-                  route.push("/service");
+                  route.push("/quiz");
                 }}
               >
                 Take Quiz
