@@ -38,12 +38,13 @@ export default function Home() {
     <div>
       <div className="intro mt-[8vh] flex justify-between items-center mb-[9.5vh] min-w-960px ">
         <div className="left w-[50%] flex flex-col pl-[3rem] items-end">
-          <div className="content">
-            <div className="qoute-1 text-[1.8rem] text-justify mb-[1rem] min-w-[367px] font-medium">
-              Step into Your Future with Aspirify, Your Ultimate Career
-              Companion.
+          <div className="content flex flex-col gap-3">
+            <div className="qoute-1 text-[2.5rem] text-balance mb-[1rem] min-w-[367px] font-medium">
+              Step into Your Future with{" "}
+              <span className="text-[#da3a00]">Aspirify</span>, Your Ultimate
+              Career Companion.
             </div>
-            <div className="qoute-2 text-[1.2rem] text-justify min-w-[367px]">
+            <div className="qoute-2 text-[1.2rem] text-justify min-w-[367px] ">
               Welcome to Aspirify, your personalized career compass. We're here
               to help you navigate your professional journey, discover your
               passions, and achieve your career aspirations with confidence.
@@ -51,12 +52,20 @@ export default function Home() {
             </div>
             <div className="getstarted mt-[1.2rem]">
               <button
-                className="startbutton w-[8rem] h-[2.5rem] text-[1.1rem] text-white bg-black border-0"
+                className="startbutton w-[9rem] h-[3rem] text-[1.1rem] text-white bg-[#da3a00] border-0 transition-all duration-200 hover:scale-[1.1] "
                 onClick={() => {
                   route.push("/service");
                 }}
               >
                 Get started
+              </button>
+              <button
+                className="startbutton w-[9rem] h-[3rem] text-[1.1rem] text-[#da3a00] bg-white border-[1px] border-[#da3a00] ml-[1rem] transition-all duration-200 hover:scale-[1.1]"
+                onClick={() => {
+                  route.push("/service");
+                }}
+              >
+                Take Quiz
               </button>
             </div>
           </div>
@@ -124,8 +133,8 @@ export default function Home() {
                 <div
                   className={
                     toggle === i
-                      ? "min-w-[700px] w-[50vw] text-[1.3rem] "
-                      : "max-h-0 overflow-hidden"
+                      ? "min-w-[700px] w-[50vw] text-[1.3rem] transition-[height,opacity] h-[4.5rem] duration-300 opacity-100"
+                      : "min-w-[700px] w-[50vw] text-[1.3rem] h-0 overflow-hidden transition-[height,opacity] duration-200 opacity-0"
                   }
                 >
                   {data.answer}
