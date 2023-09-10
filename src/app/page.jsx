@@ -120,7 +120,7 @@ export default function Home() {
             return (
               <div className="section-1 flex flex-col items-center text-justify cursor-pointer min-w-[960px]">
                 <div
-                  className="question flex w-[50vw] justify-between text-[1.5rem] pt-[1.5rem] pb-[1.5rem] min-w-[700px]"
+                  className="question flex w-[50vw] justify-between text-[1.5rem] pb-[1.5rem] mt-[1.5rem] min-w-[700px]"
                   onClick={() => {
                     toggled(i);
                   }}
@@ -133,7 +133,7 @@ export default function Home() {
                 <div
                   className={
                     toggle === i
-                      ? "min-w-[700px] w-[50vw] text-[1.3rem] transition-[height,opacity] h-[4.5rem] duration-300 opacity-100"
+                      ? "min-w-[700px] w-[50vw] text-[1.3rem] transition-[height,opacity] h-[6rem] duration-300 opacity-100 "
                       : "min-w-[700px] w-[50vw] text-[1.3rem] h-0 overflow-hidden transition-[height,opacity] duration-200 opacity-0"
                   }
                 >
