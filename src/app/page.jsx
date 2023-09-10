@@ -1,39 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import qa from "./jsons/qa.json";
 
 export default function Home() {
   const route = useRouter();
   const [toggle, settoggle] = useState(null);
+  const [faq, setqa] = useState(qa.data);
   const toggled = (i) => {
     if (toggle === i) {
       return settoggle(null);
     }
     settoggle(i);
   };
-  const qa = [
-    {
-      question: "What is Aspirify and how can it help me in my career?",
-      answer:
-        " Aspirify is your personalized career companion. We provide tailored guidance, resources, and insights to help you make informed career decisions, explore new opportunities, and ultimately, achieve your professional goals.",
-    },
-    {
-      question: " How does Aspirify match me with the right career path?",
-      answer:
-        " We begin by conducting a personalized quiz that assesses your skills, interests, and aspirations. Using this data, we provide you with career recommendations that align with your unique profile, helping you identify the roles that suit you best.",
-    },
-    {
-      question: "Can Aspirify help me with career planning and goal-setting?",
-      answer:
-        "Absolutely! We offer a comprehensive roadmap that outlines the steps you need to take to reach your career goals. Our planning tools assist you in setting achievable milestones and tracking your progress.",
-    },
-    {
-      question:
-        "Is there a support team available if I have questions or encounter issues?",
-      answer:
-        "Yes, we have a dedicated support team ready to assist you. Feel free to reach out via our inapp chat or email, and we'll be happy to help you with any questions or concerns.",
-    },
-  ];
+
   return (
     <div>
       <div className="intro mt-[8vh] flex justify-between items-center mb-[9.5vh] min-w-960px ">
@@ -116,7 +96,7 @@ export default function Home() {
           Frequently Asked Question
         </div>
         <div className="answers">
-          {qa.map((data, i) => {
+          {faq.map((data, i) => {
             return (
               <div className="section-1 flex flex-col items-center text-justify cursor-pointer min-w-[960px]">
                 <div
