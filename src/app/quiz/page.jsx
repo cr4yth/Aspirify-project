@@ -39,7 +39,7 @@ const Quiz = () => {
           <div className="answer flex flex-col mt-[1rem]">
             {answers?.map((dat) => {
               return (
-                <div className="border-solid border-[1px] border-[#da3a00] p-[6px] mb-[20px] w-[18.6rem] transition-all duration-200 hover:scale-[1.08] shadow-[5px_5px_rgba(218,58,0,0.5),5px_5px_rgba(218,58,0,0.4),10px_10px_rgba(218,58,0,0.3),15px_15px_rgba(218,58,0,0.2),20px_20px_rgba(218,58,0,0.1),25px_25px_rgba(218,58,0,0.05)]">
+                <div className="border-solid border-[1px] border-[#da3a00] p-[6px] mb-[20px] w-[18.6rem] transition-all duration-200 hover:scale-[1.08] shadow-[3.5px_3.5px_rgba(218,58,0,0.85)]">
                   <label className="text-[1.4rem] flex" for={dat.ans}>
                     <input
                       type="radio"
