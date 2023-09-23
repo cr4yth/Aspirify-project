@@ -13,7 +13,6 @@ export default function Home() {
     }
     settoggle(i);
   };
-
   return (
     <div>
       <div className="intro mt-[8vh] flex justify-between items-center mb-[9.5vh] min-w-960px ">
@@ -138,26 +137,26 @@ export default function Home() {
           <div>
             <input
               placeholder="Full Name"
-              className="msg outline-none border-t-none border-l-none border-r-none border-b-2 border-black text-black text-[1.7rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
+              className="msg outline-none border-t-none border-l-none border-r-none border-b-2 border-black text-black text-[1.5rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
               type="text"
             ></input>
           </div>
           <div>
             <input
               placeholder="E-mail"
-              className="msg outline-none border-t-none border-l-none border-r-none border-b-2 border-black text-black text-[1.7rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
+              className="msg outline-none border-t-none border-l-none border-r-none border-b-[2px] border-black text-black text-[1.5rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
               type="email"
             ></input>
           </div>
           <div>
             <input
               placeholder="Message"
-              className="msg outline-none border-t-none border-l-none border-r-none border-b-2 border-black text-black text-[1.7rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
+              className="msg outline-none border-t-none border-l-none border-r-none border-b-2 border-black text-black text-[1.5rem] mt-[2rem] w-[20vw] min-w-[300px] pt-[0.5vh] pr-[1vw] pb-[1vh] pl-[0vw]"
             ></input>
           </div>
           <button
             type="submit"
-            className="subuton w-[8.5rem] h-[2.2rem] bg-black text-[1.2] align-middle mt-[4vh] border-none text-white"
+            className="subuton w-[8.7rem] h-[2.4rem] bg-black text-[1.2rem] align-middle mt-[4vh] border-none text-white transition-all duration-200 hover:scale-[1.1]"
           >
             Send
           </button>
