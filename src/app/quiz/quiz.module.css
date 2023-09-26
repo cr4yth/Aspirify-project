@@ -1,0 +1,131 @@
+.king {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 81vw;
+  min-width: 867px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.subking {
+  margin-top: 1rem;
+  display: flex;
+  /* border: 1px solid #da3a00; */
+  box-shadow: rgba(218, 58, 0, 0.5) 5px 5px, rgba(218, 58, 0, 0.4) 5px 5px,
+    rgba(218, 58, 0, 0.3) 10px 10px, rgba(218, 58, 0, 0.2) 15px 15px;
+}
+.q {
+  min-width: 485px;
+  width: 100%;
+}
+.quizimg {
+  width: 35vw;
+  height: 80vh;
+  object-fit: cover;
+  min-width: 350px;
+  min-height: 700px;
+}
+.form {
+  min-width: 485px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.ques span:nth-child(1) {
+  font-size: 1.35rem;
+  color: #da3a00;
+  padding-right: 0.3rem;
+}
+.ques span:nth-child(2) {
+  font-size: 1.35rem;
+  color: #da3a00;
+}
+.ques span:nth-child(3) {
+  color: #da3a00;
+  font-size: 1.05rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  display: flex;
+}
+.question {
+  min-width: 485px;
+  width: 40vw;
+  font-size: 1.8rem;
+  text-wrap: balance;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  min-height: 5rem;
+  padding-top: 0.5rem;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.input {
+  accent-color: #da3a00;
+}
+.options {
+  border: 1px solid #da3a00;
+  padding: 6px;
+  margin-bottom: 20px;
+  width: 18.6rem;
+  transition: all;
+  transition-duration: 200ms;
+  box-shadow: rgba(218, 58, 0, 0.85) 3.5px 3.5px;
+}
+.options:hover {
+  scale: 1.08;
+}
+.answ {
+  padding-left: 8px;
+  color: #da3a00;
+  font-weight: 300;
+}
+.buttons {
+  margin-top: 3vh;
+}
+.bleft {
+  width: 9rem;
+  height: 3rem;
+  background-color: white;
+  border: 1px solid #da3a00;
+  color: #da3a00;
+  transition: all;
+  transition-duration: 200ms;
+}
+.bleft:hover {
+  scale: 1.1;
+}
+.bright {
+  width: 9rem;
+  height: 3rem;
+  background-color: #da3a00;
+  color: white;
+  margin-left: 0.7rem;
+  transition: all;
+  transition-duration: 200ms;
+}
+.bright:hover {
+  scale: 1.1;
+}
+.buttons button:disabled {
+  opacity: 0.6;
+  border: 1px solid rgba(218, 58, 0, 0.6);
+}
+.bbleft {
+  width: 9rem;
+  height: 3rem;
+  background-color: white;
+  border: 1px solid #da3a00;
+  color: #da3a00;
+}
