@@ -1,23 +1,36 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ques from "../jsons/ques.json";
 import styles from "./quiz.module.css";
 
 const Quiz = () => {
+  const [arr, setarr] = useState([]);
+  useEffect(() => {
+    console.log(arr);
+  }, [arr]);
   const que = ques.questions;
-  const [qno, setqno] = useState(0);
   const answers = ques.answers;
-  const [topping, settopping] = useState("");
+  const [qno, setqno] = useState(0);
+  const [topping, settopping] = useState("1");
+  const [a, seta] = useState(null);
   const next = () => {
     if (qno < 16) {
       setqno(qno + 1);
+      if (a != null) {
+        setarr([...arr, a[0]]);
+      }
+      if (a == null) {
+        setarr([...arr, "1"]);
+      }
+      settopping("1");
     }
   };
-  const prev = () => {
-    if (qno > 0) {
-      setqno(qno - 1);
-    }
+  const reset = () => {
+    setqno(0);
+    setarr([]);
+    seta(a);
+    settopping("1");
   };
   return (
     <div className={styles.king}>
@@ -47,6 +60,7 @@ const Quiz = () => {
                       checked={topping === dat.id}
                       onChange={(e) => {
                         settopping(e.target.value);
+                        seta(e.target.value);
                       }}
                       className={styles.input}
                     />
@@ -57,13 +71,11 @@ const Quiz = () => {
             })}
           </div>
           <div className={styles.buttons}>
-            <button
-              disabled={qno === 0 ? true : false}
-              className={qno === 0 ? styles.bbleft : styles.bleft}
-              onClick={prev}
-            >
-              Prev
-            </button>
+            {qno > 0 && (
+              <button className={styles.bleft} onClick={reset}>
+                Reset
+              </button>
+            )}
             <button className={styles.bright} onClick={next}>
               {qno === 16 ? "Submit" : "Next"}
             </button>

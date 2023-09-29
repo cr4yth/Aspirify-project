@@ -43,7 +43,7 @@
   padding-right: 0.3rem;
 }
 .ques span:nth-child(2) {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   color: #da3a00;
 }
 .ques span:nth-child(3) {
@@ -118,7 +118,7 @@
 .bright:hover {
   scale: 1.1;
 }
-.buttons button:disabled {
+/* .buttons button:disabled {
   opacity: 0.6;
   border: 1px solid rgba(218, 58, 0, 0.6);
 }
@@ -128,4 +128,4 @@
   background-color: white;
   border: 1px solid #da3a00;
   color: #da3a00;
-}
+} */
