@@ -3,33 +3,39 @@ import React from "react";
 import { useState, useEffect } from "react";
 import ques from "../jsons/ques.json";
 import styles from "./quiz.module.css";
+import { useRouter } from "next/navigation";
 
 const Quiz = () => {
+  const router = useRouter();
   const [arr, setarr] = useState([]);
-  useEffect(() => {
-    console.log(arr);
-  }, [arr]);
   const que = ques.questions;
   const answers = ques.answers;
   const [qno, setqno] = useState(0);
   const [topping, settopping] = useState("1");
   const [a, seta] = useState(null);
   const next = () => {
-    if (qno < 16) {
-      setqno(qno + 1);
+    if (qno <= 16) {
+      if (qno < 16) {
+        setqno(qno + 1);
+      }
       if (a != null) {
-        setarr([...arr, a[0]]);
+        setarr([...arr, a]);
       }
       if (a == null) {
         setarr([...arr, "1"]);
       }
       settopping("1");
+      seta("1");
+      if (arr.length == 16) {
+        console.log(arr);
+        router.push("/result");
+      }
     }
   };
   const reset = () => {
     setqno(0);
     setarr([]);
-    seta(a);
+    seta(null);
     settopping("1");
   };
   return (
@@ -48,7 +54,7 @@ const Quiz = () => {
             <span className={styles.q}>{que[qno].question}</span>
           </div>
           <div className={styles.answer}>
-            {answers?.map((dat) => {
+            {answers?.map((dat, i) => {
               return (
                 <div className={styles.options}>
                   <label className={styles.label} for={dat.ans}>
